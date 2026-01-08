@@ -1,0 +1,8 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [TABLE_CATALOG]
+      ,[TABLE_SCHEMA]
+      ,[TABLE_NAME]
+      ,[CONSTRAINT_CATALOG]
+      ,[CONSTRAINT_SCHEMA]
+      ,[CONSTRAINT_NAME]
+  FROM [master].[INFORMATION_SCHEMA].[CONSTRAINT_TABLE_USAGE]
