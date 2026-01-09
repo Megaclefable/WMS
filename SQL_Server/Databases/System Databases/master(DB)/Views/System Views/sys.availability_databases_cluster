@@ -1,0 +1,6 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [group_id]
+      ,[group_database_id]
+      ,[database_name]
+      ,[truncation_lsn]
+  FROM [master].[sys].[availability_databases_cluster]
