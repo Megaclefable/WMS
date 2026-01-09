@@ -1,0 +1,12 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [database_specification_id]
+      ,[audit_action_id]
+      ,[audit_action_name]
+      ,[class]
+      ,[class_desc]
+      ,[major_id]
+      ,[minor_id]
+      ,[audited_principal_id]
+      ,[audited_result]
+      ,[is_group]
+  FROM [master].[sys].[database_audit_specification_details]
