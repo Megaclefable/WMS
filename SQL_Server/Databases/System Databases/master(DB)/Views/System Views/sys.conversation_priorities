@@ -1,0 +1,8 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [priority_id]
+      ,[name]
+      ,[service_contract_id]
+      ,[local_service_id]
+      ,[remote_service_name]
+      ,[priority]
+  FROM [master].[sys].[conversation_priorities]
