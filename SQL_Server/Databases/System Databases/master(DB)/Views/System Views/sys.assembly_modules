@@ -1,0 +1,8 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [object_id]
+      ,[assembly_id]
+      ,[assembly_class]
+      ,[assembly_method]
+      ,[null_on_null_input]
+      ,[execute_as_principal_id]
+  FROM [master].[sys].[assembly_modules]
