@@ -1,0 +1,7 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [object_id]
+      ,[is_track_columns_updated_on]
+      ,[min_valid_version]
+      ,[begin_version]
+      ,[cleanup_version]
+  FROM [master].[sys].[change_tracking_tables]
