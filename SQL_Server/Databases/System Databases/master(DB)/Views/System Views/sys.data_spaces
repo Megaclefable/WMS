@@ -1,0 +1,8 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [name]
+      ,[data_space_id]
+      ,[type]
+      ,[type_desc]
+      ,[is_default]
+      ,[is_system]
+  FROM [master].[sys].[data_spaces]
