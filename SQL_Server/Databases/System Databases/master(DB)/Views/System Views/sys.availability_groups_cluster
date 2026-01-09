@@ -1,0 +1,10 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [group_id]
+      ,[name]
+      ,[resource_id]
+      ,[resource_group_id]
+      ,[failure_condition_level]
+      ,[health_check_timeout]
+      ,[automated_backup_preference]
+      ,[automated_backup_preference_desc]
+  FROM [master].[sys].[availability_groups_cluster]
