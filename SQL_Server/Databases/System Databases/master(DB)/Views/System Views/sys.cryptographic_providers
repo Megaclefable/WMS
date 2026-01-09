@@ -1,0 +1,8 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [provider_id]
+      ,[name]
+      ,[guid]
+      ,[version]
+      ,[dll_path]
+      ,[is_enabled]
+  FROM [master].[sys].[cryptographic_providers]
