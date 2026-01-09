@@ -1,0 +1,11 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [listener_id]
+      ,[ip_address]
+      ,[ip_subnet_mask]
+      ,[is_dhcp]
+      ,[network_subnet_ip]
+      ,[network_subnet_prefix_length]
+      ,[network_subnet_ipv4_mask]
+      ,[state]
+      ,[state_desc]
+  FROM [master].[sys].[availability_group_listener_ip_addresses]
