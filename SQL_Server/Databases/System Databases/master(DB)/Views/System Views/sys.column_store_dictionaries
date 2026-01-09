@@ -1,0 +1,11 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [partition_id]
+      ,[hobt_id]
+      ,[column_id]
+      ,[dictionary_id]
+      ,[version]
+      ,[type]
+      ,[last_id]
+      ,[entry_count]
+      ,[on_disk_size]
+  FROM [master].[sys].[column_store_dictionaries]
