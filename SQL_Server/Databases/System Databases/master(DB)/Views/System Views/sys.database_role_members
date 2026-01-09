@@ -1,0 +1,4 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [role_principal_id]
+      ,[member_principal_id]
+  FROM [master].[sys].[database_role_members]
