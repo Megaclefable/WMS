@@ -1,0 +1,12 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [object_id]
+      ,[index_id]
+      ,[partition_number]
+      ,[row_group_id]
+      ,[delta_store_hobt_id]
+      ,[state]
+      ,[state_description]
+      ,[total_rows]
+      ,[deleted_rows]
+      ,[size_in_bytes]
+  FROM [master].[sys].[column_store_row_groups]
