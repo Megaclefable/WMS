@@ -1,0 +1,8 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [database_id]
+      ,[is_auto_cleanup_on]
+      ,[retention_period]
+      ,[retention_period_units]
+      ,[retention_period_units_desc]
+      ,[max_cleanup_version]
+  FROM [master].[sys].[change_tracking_databases]
