@@ -1,0 +1,10 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [name]
+      ,[column_master_key_id]
+      ,[create_date]
+      ,[modify_date]
+      ,[key_store_provider_name]
+      ,[key_path]
+      ,[allow_enclave_computations]
+      ,[signature]
+  FROM [master].[sys].[column_master_keys]
