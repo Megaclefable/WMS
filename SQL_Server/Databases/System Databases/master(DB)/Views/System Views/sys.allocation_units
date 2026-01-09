@@ -1,0 +1,10 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [allocation_unit_id]
+      ,[type]
+      ,[type_desc]
+      ,[container_id]
+      ,[data_space_id]
+      ,[total_pages]
+      ,[used_pages]
+      ,[data_pages]
+  FROM [master].[sys].[allocation_units]
