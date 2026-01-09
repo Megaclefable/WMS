@@ -1,0 +1,9 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [database_id]
+      ,[database_guid]
+      ,[family_guid]
+      ,[last_log_backup_lsn]
+      ,[recovery_fork_guid]
+      ,[first_recovery_fork_guid]
+      ,[fork_point_lsn]
+  FROM [master].[sys].[database_recovery_status]
