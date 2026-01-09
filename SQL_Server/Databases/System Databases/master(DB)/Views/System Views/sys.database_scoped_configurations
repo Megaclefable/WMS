@@ -1,0 +1,7 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [configuration_id]
+      ,[name]
+      ,[value]
+      ,[value_for_secondary]
+      ,[is_value_default]
+  FROM [master].[sys].[database_scoped_configurations]
