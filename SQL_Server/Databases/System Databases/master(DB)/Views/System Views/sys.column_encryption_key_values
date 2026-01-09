@@ -1,0 +1,6 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [column_encryption_key_id]
+      ,[column_master_key_id]
+      ,[encrypted_value]
+      ,[encryption_algorithm_name]
+  FROM [master].[sys].[column_encryption_key_values]
