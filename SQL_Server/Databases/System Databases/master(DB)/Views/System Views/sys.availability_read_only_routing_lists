@@ -1,0 +1,5 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [replica_id]
+      ,[routing_priority]
+      ,[read_only_replica_id]
+  FROM [master].[sys].[availability_read_only_routing_lists]
