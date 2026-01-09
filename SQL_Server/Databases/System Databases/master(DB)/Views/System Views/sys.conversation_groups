@@ -1,0 +1,5 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [conversation_group_id]
+      ,[service_id]
+      ,[is_system]
+  FROM [master].[sys].[conversation_groups]
