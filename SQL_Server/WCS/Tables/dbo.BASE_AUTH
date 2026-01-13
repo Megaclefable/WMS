@@ -1,0 +1,12 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [AUTH_ID]
+      ,[USER_GROUP_YN]
+      ,[USER_ID]
+      ,[USER_GROUP_ID]
+      ,[MENU_GROUP_ID]
+      ,[REMARK]
+      ,[CREATE_DTTM]
+      ,[CREATE_BY]
+      ,[SAVE_DTTM]
+      ,[SAVE_BY]
+  FROM [WCS_VERKOR].[dbo].[BASE_AUTH]
