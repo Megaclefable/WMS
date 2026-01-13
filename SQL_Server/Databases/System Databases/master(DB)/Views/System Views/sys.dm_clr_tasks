@@ -1,0 +1,10 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [task_address]
+      ,[sos_task_address]
+      ,[appdomain_address]
+      ,[state]
+      ,[abort_state]
+      ,[type]
+      ,[affinity_count]
+      ,[forced_yield_count]
+  FROM [master].[sys].[dm_clr_tasks]
