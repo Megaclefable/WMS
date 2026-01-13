@@ -1,0 +1,4 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [external_language_id]
+      ,[is_installed]
+  FROM [master].[sys].[dm_db_external_language_stats]
