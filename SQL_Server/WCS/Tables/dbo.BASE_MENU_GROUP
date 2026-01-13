@@ -1,0 +1,11 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [MENU_GROUP_ID]
+      ,[MENU_ID]
+      ,[READ_YN]
+      ,[MODIFY_YN]
+      ,[REMARK]
+      ,[CREATE_DTTM]
+      ,[CREATE_BY]
+      ,[SAVE_DTTM]
+      ,[SAVE_BY]
+  FROM [WCS_VERKOR].[dbo].[BASE_MENU_GROUP]
