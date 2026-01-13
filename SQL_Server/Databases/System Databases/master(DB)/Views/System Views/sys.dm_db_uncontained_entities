@@ -1,0 +1,11 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [class]
+      ,[class_desc]
+      ,[major_id]
+      ,[statement_line_number]
+      ,[statement_offset_begin]
+      ,[statement_offset_end]
+      ,[statement_type]
+      ,[feature_name]
+      ,[feature_type_name]
+  FROM [master].[sys].[dm_db_uncontained_entities]
