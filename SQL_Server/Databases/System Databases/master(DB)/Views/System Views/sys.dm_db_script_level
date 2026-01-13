@@ -1,0 +1,11 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [database_id]
+      ,[script_id]
+      ,[script_name]
+      ,[version]
+      ,[script_level]
+      ,[downgrade_start_level]
+      ,[downgrade_target_level]
+      ,[upgrade_start_level]
+      ,[upgrade_target_level]
+  FROM [master].[sys].[dm_db_script_level]
