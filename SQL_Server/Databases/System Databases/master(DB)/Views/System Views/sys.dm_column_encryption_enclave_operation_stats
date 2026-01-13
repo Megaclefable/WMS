@@ -1,0 +1,4 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [operation_type]
+      ,[total_operation_count]
+  FROM [master].[sys].[dm_column_encryption_enclave_operation_stats]
