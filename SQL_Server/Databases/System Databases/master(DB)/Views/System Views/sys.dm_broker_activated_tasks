@@ -1,0 +1,7 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [spid]
+      ,[database_id]
+      ,[queue_id]
+      ,[procedure_name]
+      ,[execute_as]
+  FROM [master].[sys].[dm_broker_activated_tasks]
