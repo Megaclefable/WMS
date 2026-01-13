@@ -1,0 +1,13 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [database_id]
+      ,[object_id]
+      ,[index_id]
+      ,[partition_number]
+      ,[column_id]
+      ,[row_group_id]
+      ,[object_type]
+      ,[object_type_desc]
+      ,[access_count]
+      ,[memory_used_in_bytes]
+      ,[object_load_time]
+  FROM [master].[sys].[dm_column_store_object_pool]
