@@ -1,0 +1,8 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [database_id]
+      ,[file_id]
+      ,[page_id]
+      ,[error_type]
+      ,[page_status]
+      ,[modification_time]
+  FROM [master].[sys].[dm_db_mirroring_auto_page_repair]
