@@ -1,0 +1,6 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [name]
+      ,[description]
+      ,[endpoint]
+      ,[protocol_desc]
+  FROM [master].[sys].[dm_cluster_endpoints]
