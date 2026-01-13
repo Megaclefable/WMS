@@ -1,0 +1,5 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [class_type]
+      ,[class_type_desc]
+      ,[securable_class_desc]
+  FROM [master].[sys].[dm_audit_class_type_map]
