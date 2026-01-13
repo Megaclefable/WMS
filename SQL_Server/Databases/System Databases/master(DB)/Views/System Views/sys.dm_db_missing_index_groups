@@ -1,0 +1,4 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [index_group_handle]
+      ,[index_handle]
+  FROM [master].[sys].[dm_db_missing_index_groups]
