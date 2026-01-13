@@ -1,0 +1,11 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [action_id]
+      ,[name]
+      ,[class_desc]
+      ,[covering_action_name]
+      ,[parent_class_desc]
+      ,[covering_parent_action_name]
+      ,[configuration_level]
+      ,[containing_group_name]
+      ,[action_in_log]
+  FROM [master].[sys].[dm_audit_actions]
