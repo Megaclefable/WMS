@@ -1,0 +1,7 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [checkpoint_id]
+      ,[checkpoint_timestamp]
+      ,[last_segment_lsn]
+      ,[recovery_lsn]
+      ,[is_synchronized]
+  FROM [master].[sys].[dm_db_xtp_checkpoint_internals]
