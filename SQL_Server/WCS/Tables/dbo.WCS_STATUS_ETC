@@ -1,0 +1,10 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [EQP_ID]
+      ,[READ_STATUS_NM]
+      ,[READ_STATUS_VAL]
+      ,[REMARK]
+      ,[CREATE_DTTM]
+      ,[CREATE_BY]
+      ,[SAVE_DTTM]
+      ,[SAVE_BY]
+  FROM [WCS].[dbo].[WCS_STATUS_ETC]
