@@ -1,0 +1,8 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [database_id]
+      ,[queue_id]
+      ,[state]
+      ,[last_empty_rowset_time]
+      ,[last_activated_time]
+      ,[tasks_waiting]
+  FROM [master].[sys].[dm_broker_queue_monitors]
