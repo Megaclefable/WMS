@@ -1,0 +1,10 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [object_id]
+      ,[xtp_object_id]
+      ,[row_insert_attempts]
+      ,[row_update_attempts]
+      ,[row_delete_attempts]
+      ,[write_conflicts]
+      ,[unique_constraint_violations]
+      ,[object_address]
+  FROM [master].[sys].[dm_db_xtp_object_stats]
