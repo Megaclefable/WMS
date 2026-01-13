@@ -1,0 +1,5 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [assembly_id]
+      ,[appdomain_address]
+      ,[load_time]
+  FROM [master].[sys].[dm_clr_loaded_assemblies]
