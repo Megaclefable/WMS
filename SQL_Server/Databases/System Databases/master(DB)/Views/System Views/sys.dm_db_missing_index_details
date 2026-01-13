@@ -1,0 +1,9 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [index_handle]
+      ,[database_id]
+      ,[object_id]
+      ,[equality_columns]
+      ,[inequality_columns]
+      ,[included_columns]
+      ,[statement]
+  FROM [master].[sys].[dm_db_missing_index_details]
