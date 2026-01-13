@@ -1,0 +1,9 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [object_id]
+      ,[xtp_object_id]
+      ,[index_id]
+      ,[total_bucket_count]
+      ,[empty_bucket_count]
+      ,[avg_chain_length]
+      ,[max_chain_length]
+  FROM [master].[sys].[dm_db_xtp_hash_index_stats]
