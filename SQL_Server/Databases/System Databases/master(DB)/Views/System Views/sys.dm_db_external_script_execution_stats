@@ -1,0 +1,5 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [external_language_id]
+      ,[counter_name]
+      ,[counter_value]
+  FROM [master].[sys].[dm_db_external_script_execution_stats]
