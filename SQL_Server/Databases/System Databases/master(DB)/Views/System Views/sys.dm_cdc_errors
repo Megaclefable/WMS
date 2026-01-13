@@ -1,0 +1,12 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [session_id]
+      ,[phase_number]
+      ,[entry_time]
+      ,[error_number]
+      ,[error_severity]
+      ,[error_state]
+      ,[error_message]
+      ,[start_lsn]
+      ,[begin_lsn]
+      ,[sequence_value]
+  FROM [master].[sys].[dm_cdc_errors]
