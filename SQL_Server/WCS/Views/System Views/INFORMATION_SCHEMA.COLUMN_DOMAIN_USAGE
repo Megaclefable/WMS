@@ -1,9 +1,0 @@
-/****** Script for SelectTopNRows command from SSMS  ******/
-SELECT TOP (1000) [DOMAIN_CATALOG]
-      ,[DOMAIN_SCHEMA]
-      ,[DOMAIN_NAME]
-      ,[TABLE_CATALOG]
-      ,[TABLE_SCHEMA]
-      ,[TABLE_NAME]
-      ,[COLUMN_NAME]
-  FROM [WCS].[INFORMATION_SCHEMA].[COLUMN_DOMAIN_USAGE]

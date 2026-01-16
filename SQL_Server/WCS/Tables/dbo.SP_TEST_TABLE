@@ -1,7 +1,0 @@
-/****** Script for SelectTopNRows command from SSMS  ******/
-SELECT TOP (1000) [SP_NAME]
-      ,[SP_CHECK_POINT]
-      ,[SP_EXCUTE_TIME]
-      ,[SP_CHECK_COLUMN]
-      ,[SP_CHECK_VALUE]
-  FROM [WCS].[dbo].[SP_TEST_TABLE]
