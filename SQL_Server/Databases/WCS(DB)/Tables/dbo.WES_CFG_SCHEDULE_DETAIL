@@ -1,0 +1,12 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [PROGRAM_ID]
+      ,[LOGIC_ID]
+      ,[DETAIL_ID]
+      ,[DETAIL_VAL]
+      ,[REMARK]
+      ,[CREATE_DTTM]
+      ,[CREATE_BY]
+      ,[SAVE_DTTM]
+      ,[SAVE_BY]
+      ,[DETAIL_ID_2]
+  FROM [WCS].[dbo].[WES_CFG_SCHEDULE_DETAIL]
