@@ -1,0 +1,13 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [TRACE_SEQ]
+      ,[TRACE_DTTM]
+      ,[TRACE_TYPE]
+      ,[EQP_ID]
+      ,[SEND_DATA]
+      ,[COMMAND_STATE]
+      ,[REMARK]
+      ,[CREATE_DTTM]
+      ,[CREATE_BY]
+      ,[SAVE_DTTM]
+      ,[SAVE_BY]
+  FROM [WCS].[dbo].[WCS_COMMAND_SCANNER_TRACE]
