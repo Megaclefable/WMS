@@ -1,0 +1,13 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [HOST_ORDER_KEY]
+      ,[REQUEST_SEQ]
+      ,[ALLOCATION_RESULT_STATE]
+      ,[CONTAINER_ID]
+      ,[STATION_NO]
+      ,[REMARK]
+      ,[CREATE_DTTM]
+      ,[CREATE_BY]
+      ,[SAVE_DTTM]
+      ,[SAVE_BY]
+      ,[WES_ORDER_ID]
+  FROM [WCS].[dbo].[WES_ALLOCATION_RESULT_HIST]
