@@ -1,0 +1,13 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [SYSTEM_CD]
+      ,[EQP_ID]
+      ,[WES_ALARM_LEVEL]
+      ,[WES_ALARM_CD]
+      ,[WES_ALARM_DESC]
+      ,[WES_ALARM_START_DTTM]
+      ,[WES_ALARM_END_DTTM]
+      ,[CREATE_DTTM]
+      ,[CREATE_BY]
+      ,[SAVE_DTTM]
+      ,[SAVE_BY]
+  FROM [WCS].[dbo].[WES_ALARM_INFO_HIST]
