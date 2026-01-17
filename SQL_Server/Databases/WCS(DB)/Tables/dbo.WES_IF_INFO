@@ -1,0 +1,12 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [IF_SEQ]
+      ,[IF_DTTM]
+      ,[IF_YN]
+      ,[IF_ID]
+      ,[CONTENTS]
+      ,[RTN_VALUE]
+      ,[CREATE_DTTM]
+      ,[CREATE_BY]
+      ,[SAVE_DTTM]
+      ,[SAVE_BY]
+  FROM [WCS].[dbo].[WES_IF_INFO]
