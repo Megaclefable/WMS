@@ -1,0 +1,7 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [SEQ]
+      ,[PROC_NM]
+      ,[PROC_TYPE]
+      ,[PROC_DT]
+      ,[MSG]
+  FROM [WCS].[dbo].[TEST_PROC_LOG]
