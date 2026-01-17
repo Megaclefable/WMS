@@ -1,0 +1,13 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [EQP_ID]
+      ,[CONFIG_TYPE]
+      ,[RETURN_EQP_ID]
+      ,[ALTERNATIVE_HS_ID]
+      ,[CONNECTED_WH_TYPE]
+      ,[ABNORMAL_EQP_ID]
+      ,[REMARK]
+      ,[CREATE_DTTM]
+      ,[CREATE_BY]
+      ,[SAVE_DTTM]
+      ,[SAVE_BY]
+  FROM [WCS].[dbo].[WCS_CFG_CV_SETTING]
